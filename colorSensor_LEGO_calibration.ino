@@ -1,8 +1,3 @@
-//#include <Wire.h>
-//#include <Adafruit_GFX.h>
-//#include <Adafruit_SSD1306.h>
-
-//Adafruit_SSD1306 display(128, 64, &Wire, -1);
 class colorSensor {
 private:
 
@@ -141,14 +136,9 @@ colorSensor sensor(A0, 8, 9, 10);
 
 void setup() {
   sensor.setColorSensor();
-  //setOled();
   Serial.begin(9600);
 }
 
 void loop() {
-  bool print = false;
-  //getColor();
-  //show();
-  //Serial.println(sensor.getColor());
-  sensor.printPHT();
+  Serial.println(sensor.getColor());
 }
