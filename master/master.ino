@@ -32,6 +32,8 @@ public:
   }
 
   byte getColor();
+  void printValues();
+  bool darkness(int cutoffValue);
 
   // Setter methods for margins
   void setBlackMin(int r, int g, int b) {
@@ -162,20 +164,62 @@ byte ColorSensor::getColor() {
   return color;
 }
 
-ColorSensor sensorLeft(35, 33, 31, A8);
-ColorSensor sensorRight(41, 39, 37, A7);
+void ColorSensor::printValues() {
+
+  Serial.print("Red: ");
+  Serial.print(R_raw);
+  Serial.print("  |  Green: ");
+  Serial.print(G_raw);
+  Serial.print("  |  Blue: ");
+  Serial.println(B_raw);
+  Serial.print("Frequency: ");
+  Serial.print(1000000 / (final - inicial));
+  Serial.println("Hz");
+
+  Serial.print("Color: ");
+  Serial.println(color);
+  Serial.println();
+}
+
+bool ColorSensor::darkness(int cutoffValue) {
+  unsigned long fallTime = 350;
+  unsigned long riseTime = 350;
+  byte margin_no_color = 3;
+
+  digitalWrite(r_pin, HIGH);
+  delayMicroseconds(riseTime);
+  reflectedOnR = analogRead(pht);
+  digitalWrite(r_pin, LOW);
+  delayMicroseconds(fallTime);
+  reflectedOffR = analogRead(pht);
+  minusR = reflectedOnR - reflectedOffR;
+  if (minusR <= margin_no_color) {
+    R_raw = 0;
+  } else {
+    R_raw = minusR - margin_no_color;
+  }
+
+  if(R_raw <= cutoffValue){
+    return 1;
+  } else{
+    return 0;
+  }
+
+}
+
+// R, G, B, analog signal
+ColorSensor sensor(8, 9, 10, A0);
 
 void setup() {
   Serial.begin(9600);
   ADCSRA &= ~PS_128;
   ADCSRA |= PS_16;
+  //sensor.setBlackMin(1, 1, 1);
 
 }
 
 void loop() {
-  //byte detectedColorLeft = sensorLeft.getColor();
-  //byte detectedColorRight = sensorRight.getColor();
-  // Use detectedColorLeft and detectedColorRight as needed
-  Serial.println(sensorRight.getColor());
-   Serial.println(sensorLeft.getColor());
-}
+  sensor.getColor();Serial.println("Sensor data:");sensor.printValues();
+  Serial.println("Black as a boolean: ");Serial.print(sensor.darkness(70));
+  delay(1000);
+  }
