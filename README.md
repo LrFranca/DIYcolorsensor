@@ -3,8 +3,8 @@ How it was desined to be:
 
 Schematic:
 
-![image](https://github.com/FledWaif/LEGOcolorsensorTest/assets/117331016/7f55a53d-b0e6-4029-b559-befc9d683d2d)
+![image](https://github.com/user-attachments/assets/0a0a3cc1-aa1e-46b9-b459-40e835705d82)
 
 Traces sugestion:
 
-![image](https://github.com/FledWaif/ColorSensorProject/assets/117331016/515e074e-fdcb-4e21-818a-1f5636eb6570)
+![image](https://github.com/user-attachments/assets/360ed320-8118-4191-8f11-edede7424bea)
