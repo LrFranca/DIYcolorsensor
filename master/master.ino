@@ -1,18 +1,3 @@
-  /*sensor.setBlackMin(0, 0, 0);
-  sensor.setBlackMax(130, 130, 130);
-  sensor.setWhiteMin(300, 300, 300);
-  sensor.setWhiteMax(560, 560, 700);
-  sensor.setSilverMin(400, 560, 300);
-  sensor.setSilverMax(1023, 1023, 1023);
-  sensor.setRedMin(400, 150, 150);
-  sensor.setRedMax(600, 250, 250);
-  sensor.setBlueMin(40, 180, 200);
-  sensor.setBlueMax(250, 310, 500);
-  sensor.setGreenMin(150, 350, 180);
-  sensor.setGreenMax(210, 490, 260);
-  sensor.setYellowMin(500, 300, 180);
-  sensor.setYellowMax(610, 450, 250);*/
-
 /* 
   sensor.getColor(); :
     Função responsável por realizar a leitura das intensidades de luz refletida pelas cores vermelha, verde e azul(R, G e B)
@@ -288,6 +273,25 @@ void setup() {
   Serial.begin(9600);
   ADCSRA &= ~PS_128;
   ADCSRA |= PS_16;
+
+//sensor.set(Cor)+(Min ou Max)+(valorR, valorG, valorB); para as margens.
+//Ex:
+
+/*sensor.setBlackMin(0, 0, 0);
+  sensor.setBlackMax(130, 130, 130);
+  sensor.setWhiteMin(300, 300, 300);
+  sensor.setWhiteMax(560, 560, 700);
+  sensor.setSilverMin(400, 560, 300);
+  sensor.setSilverMax(1023, 1023, 1023);
+  sensor.setRedMin(400, 150, 150);
+  sensor.setRedMax(600, 250, 250);
+  sensor.setBlueMin(40, 180, 200);
+  sensor.setBlueMax(250, 310, 500);
+  sensor.setGreenMin(150, 350, 180);
+  sensor.setGreenMax(210, 490, 260);
+  sensor.setYellowMin(500, 300, 180);
+  sensor.setYellowMax(610, 450, 250);
+*/
 
 
 }
