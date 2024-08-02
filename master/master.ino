@@ -24,7 +24,8 @@
     4 - amarelo;
     5 - vermelho;
     6 - branco;
-    7 - o sensor leu valores de reflectância, mas não conseguiu identificar a cor.
+    7 - prata;
+    8 - o sensor leu valores de reflectância, mas não conseguiu identificar a cor.
 
     OBS: recebe como parametro a velocidade em que vai fazer isso(não recomendo trocar a velocidade).
     Tipo: byte(byte).
