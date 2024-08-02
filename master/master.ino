@@ -32,7 +32,7 @@
 */
 /*
   sensor.printValues(); :
-    Função responsável por informar a cor, os valores de vermelho, verde e azul e quantas leituras o sensor faz a cada segundo.
+    Função responsável por informar a cor, os valores de vermelho, verde e azul e quantas leituras o sensor faz a cada segundo no monitor serial.
     OBS: A função vai informar os ultimos valores lidos pela função getColor();
     se não houver nenhum valor lido provavelmente o valor de frequência(frequency) será muito alto.
     Tipo: vazio(int).
