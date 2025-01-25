@@ -2,7 +2,10 @@
 #include "DIYcolorsensor.h"
 
 ColorSensor::ColorSensor(byte r, byte g, byte b, byte p, float RmS, float GmS, float BmS) : r_pin(r), g_pin(g), b_pin(b), pht(p) {
+
     if(isArduino){    
+    const unsigned char PS_16 = (1 << ADPS2);
+    const unsigned char PS_128 = (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0);
     ADCSRA &= ~PS_128;
     ADCSRA |= PS_16;
     }
