@@ -23,6 +23,7 @@ private:
     unsigned long inicial, final;
 
 public:
+    bool isArduino = true;
     unsigned long fallTime = 350;
     unsigned long riseTime = 350;
     int cutOffValue = 150;
