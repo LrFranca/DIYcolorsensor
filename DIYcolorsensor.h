@@ -5,8 +5,6 @@
 
 class ColorSensor {
 private:
-    const unsigned char PS_16 = (1 << ADPS2);
-    const unsigned char PS_128 = (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0);
     byte r_pin, g_pin, b_pin, pht;
     float Rm, Gm, Bm;
     int reflectedOffR, reflectedOnR, reflectedOffG, reflectedOnG, reflectedOffB, reflectedOnB;
