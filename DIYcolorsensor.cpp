@@ -141,3 +141,87 @@ bool ColorSensor::isBlack() {
     return darkness() <= cutOffValue;
 }
 
+void ColorSensor::setBlackMin(int r, int g, int b) {
+    blackMin[0] = r;
+    blackMin[1] = g;
+    blackMin[2] = b;
+}
+
+void ColorSensor::setBlackMax(int r, int g, int b) {
+    blackMax[0] = r;
+    blackMax[1] = g;
+    blackMax[2] = b;
+}
+
+void ColorSensor::setBlueMin(int r, int g, int b) {
+    blueMin[0] = r;
+    blueMin[1] = g;
+    blueMin[2] = b;
+}
+
+void ColorSensor::setBlueMax(int r, int g, int b) {
+    blueMax[0] = r;
+    blueMax[1] = g;
+    blueMax[2] = b;
+}
+
+void ColorSensor::setGreenMin(int r, int g, int b) {
+    greenMin[0] = r;
+    greenMin[1] = g;
+    greenMin[2] = b;
+}
+
+void ColorSensor::setGreenMax(int r, int g, int b) {
+    greenMax[0] = r;
+    greenMax[1] = g;
+    greenMax[2] = b;
+}
+
+void ColorSensor::setRedMin(int r, int g, int b) {
+    redMin[0] = r;
+    redMin[1] = g;
+    redMin[2] = b;
+}
+
+void ColorSensor::setRedMax(int r, int g, int b) {
+    redMax[0] = r;
+    redMax[1] = g;
+    redMax[2] = b;
+}
+
+void ColorSensor::setYellowMin(int r, int g, int b) {
+    yellowMin[0] = r;
+    yellowMin[1] = g;
+    yellowMin[2] = b;
+}
+
+void ColorSensor::setYellowMax(int r, int g, int b) {
+    yellowMax[0] = r;
+    yellowMax[1] = g;
+    yellowMax[2] = b;
+}
+
+void ColorSensor::setWhiteMin(int r, int g, int b) {
+    whiteMin[0] = r;
+    whiteMin[1] = g;
+    whiteMin[2] = b;
+}
+
+void ColorSensor::setWhiteMax(int r, int g, int b) {
+    whiteMax[0] = r;
+    whiteMax[1] = g;
+    whiteMax[2] = b;
+}
+
+void ColorSensor::setSilverMin(int r, int g, int b) {
+    silverMin[0] = r;
+    silverMin[1] = g;
+    silverMin[2] = b;
+}
+
+void ColorSensor::setSilverMax(int r, int g, int b) {
+    silverMax[0] = r;
+    silverMax[1] = g;
+    silverMax[2] = b;
+}
+
