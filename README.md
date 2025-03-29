@@ -5,7 +5,7 @@ RGB color detection library using phototransistors with manual RGB cube calibrat
 
 ## 📦 Installation
 1. **Arduino IDE**: Sketch > Include Library > Manage Libraries > Search "DIY Color Sensor"
-2. **Manual**: Download [ZIP](https://github.com/yourusername/DIYColorSensor/archive/main.zip) and add via Sketch > Include Library > Add .ZIP Library
+2. **Manual**: Download [ZIP](https://github.com/LrFranca/DIYColorSensor/archive/main.zip) and add via Sketch > Include Library > Add .ZIP Library
    
 ## � Color Codes
 `getColor()` returns these integer values:
