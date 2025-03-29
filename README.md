@@ -6,6 +6,21 @@ RGB color detection library using phototransistors with manual RGB cube calibrat
 ## 📦 Installation
 1. **Arduino IDE**: Sketch > Include Library > Manage Libraries > Search "DIY Color Sensor"
 2. **Manual**: Download [ZIP](https://github.com/yourusername/DIYColorSensor/archive/main.zip) and add via Sketch > Include Library > Add .ZIP Library
+   
+## � Color Codes
+`getColor()` returns these integer values:
+
+| Code | Color  | Hex Sample |
+|------|--------|------------|
+| 0    | No color | `#000000` |
+| 1    | Black  | `#000000` |
+| 2    | Blue   | `#0000FF` |
+| 3    | Green  | `#00FF00` |
+| 4    | Yellow | `#FFFF00` |
+| 5    | Red    | `#FF0000` |
+| 6    | White  | `#FFFFFF` |
+| 7    | Silver | `#C0C0C0` |
+| 8    | None of above | - |
 
 ## 🎨 RGB Cube Method
 ![RGB Cube](https://github.com/user-attachments/assets/9839c4d8-64c8-4d22-8dbb-dee25eb0abff)
