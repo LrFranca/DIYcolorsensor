@@ -8,7 +8,7 @@ RGB color detection library using photodiodes with manual RGB cube calibration.
 2. **Manual**: Download [ZIP](https://github.com/yourusername/DIYColorSensor/archive/main.zip) and add via Sketch > Include Library > Add .ZIP Library
 
 ## 🎨 RGB Cube Method
-![RGB Cube](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/RGB_Cube_Show_lowgamma_cutout_b.png/300px-RGB_Cube_Show_lowgamma_cutout_b.png)  
+![image](https://github.com/user-attachments/assets/9839c4d8-64c8-4d22-8dbb-dee25eb0abff)
 Colors are defined by min/max (R,G,B) thresholds creating 3D regions in the RGB color space.
 
 ## 🔌 Schematic
