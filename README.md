@@ -99,7 +99,7 @@ MIT License - See [LICENSE](/LICENSE) for details.
 
 ---
 
-Developed with ❤️ by LrFranca | [Contribute](https://github.com/yourusername/DIYColorSensor/issues)
+Developed with ❤️ by LrFranca | [Contribute](https://github.com/LrFranca/DIYColorSensor/issues)
 ```
 
 This version features:
