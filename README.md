@@ -9,6 +9,7 @@ RGB color detection library using photodiodes with manual RGB cube calibration.
 
 ## 🎨 RGB Cube Method
 ![image](https://github.com/user-attachments/assets/9839c4d8-64c8-4d22-8dbb-dee25eb0abff)
+
 Colors are defined by min/max (R,G,B) thresholds creating 3D regions in the RGB color space.
 
 ## 🔌 Schematic
