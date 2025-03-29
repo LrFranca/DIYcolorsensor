@@ -1,4 +1,3 @@
-```markdown
 # DIY Color Sensor Library
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue) ![Arduino](https://img.shields.io/badge/Arduino-Compatible-brightgreen) ![License](https://img.shields.io/badge/License-MIT-green)
 
