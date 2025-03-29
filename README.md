@@ -12,15 +12,15 @@ RGB color detection library using phototransistors with manual RGB cube calibrat
 
 | Code | Color  | Hex Sample |
 |------|--------|------------|
-| 0    | No color | `#000000` |
-| 1    | Black  | `#000000` |
-| 2    | Blue   | `#0000FF` |
-| 3    | Green  | `#00FF00` |
-| 4    | Yellow | `#FFFF00` |
-| 5    | Red    | `#FF0000` |
-| 6    | White  | `#FFFFFF` |
-| 7    | Silver | `#C0C0C0` |
-| 8    | None of above | - |
+| 0    | No color  | `❌` |
+| 1    | Black     | `■` |
+| 2    | Blue      | `🟦` |
+| 3    | Green     | `🟩` |
+| 4    | Yellow    | `🟨` |
+| 5    | Red       | `🟥` |
+| 6    | White     | `□` |
+| 7    | Silver    | `▧` |
+| 8    | Unknown   | ? |
 
 ## 🎨 RGB Cube Method
 ![RGB Cube](https://github.com/user-attachments/assets/9839c4d8-64c8-4d22-8dbb-dee25eb0abff)
