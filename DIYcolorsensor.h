@@ -24,6 +24,12 @@ public:
     bool isArduino = true;
     unsigned long fallTime = 350;
     unsigned long riseTime = 350;
+    unsigned long fallTimeR = 350;
+    unsigned long riseTimeR = 350;    
+    unsigned long fallTimeG = 350;
+    unsigned long riseTimeG = 350;    
+    unsigned long fallTimeB = 350;
+    unsigned long riseTimeB = 350;
     int cutOffValue = 150;
     byte margin_no_color = 3;
     float brightness;
