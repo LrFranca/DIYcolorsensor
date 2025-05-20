@@ -48,28 +48,28 @@ void ColorSensor::getRGB() {
     inicial = micros();
     
     digitalWrite(r_pin, HIGH);
-    delayMicroseconds(riseTime);
+    delayMicroseconds(riseTimeR);
     reflectedOnR = analogRead(pht);
     digitalWrite(r_pin, LOW);
-    delayMicroseconds(fallTime);
+    delayMicroseconds(fallTimeR);
     reflectedOffR = analogRead(pht);
     minusR = reflectedOnR - reflectedOffR;
     R_raw = (minusR <= margin_no_color) ? 0 : Rm * (minusR - margin_no_color);
 
     digitalWrite(g_pin, HIGH);
-    delayMicroseconds(riseTime);
+    delayMicroseconds(riseTimeG);
     reflectedOnG = analogRead(pht);
     digitalWrite(g_pin, LOW);
-    delayMicroseconds(fallTime);
+    delayMicroseconds(fallTimeG);
     reflectedOffG = analogRead(pht);
     minusG = reflectedOnG - reflectedOffG;
     G_raw = (minusG <= margin_no_color) ? 0 : Gm * (minusG - margin_no_color);
 
     digitalWrite(b_pin, HIGH);
-    delayMicroseconds(riseTime);
+    delayMicroseconds(riseTimeB);
     reflectedOnB = analogRead(pht);
     digitalWrite(b_pin, LOW);
-    delayMicroseconds(fallTime);
+    delayMicroseconds(fallTimeB);
     reflectedOffB = analogRead(pht);
     minusB = reflectedOnB - reflectedOffB;
     B_raw = (minusB <= margin_no_color) ? 0 : Bm * (minusB - margin_no_color);
