@@ -13,6 +13,7 @@ ColorSensor::ColorSensor(byte r, byte g, byte b, byte p, float RmS, float GmS, f
 }
 
 void ColorSensor::rgbToHSB(uint16_t r, uint16_t g, uint16_t b) {
+    hue = 0;
     float R = float(r) / 255.0;
     float G = float(g) / 255.0;
     float B = float(b) / 255.0;
